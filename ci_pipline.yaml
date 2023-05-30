@@ -1,0 +1,24 @@
+parameters:
+- name: environment
+  type: string 
+  values:
+    - dev
+    - prod
+
+pool:
+  vmImage: 'windows-latest'
+
+name: $(Build.BuildId)
+trigger:
+- main
+#- dev
+resources:
+  repositories:
+    - repository: devops
+      type: git
+      name: paperless-devops-cloud-platform
+extends:
+  template: pipelines/main-ci-cd-pipeline.yaml@devops
+  parameters:
+    FunctionName: "pl-support"
+    FunctionFolder: "SupportFunction"

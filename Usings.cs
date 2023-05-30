@@ -1,0 +1,15 @@
+﻿global using Paperless.Accessor.S3;
+global using Paperless.Analyzers;
+global using Paperless.Billings;
+global using Paperless.Documents;
+global using Paperless.Fees;
+global using Paperless.Helpers;
+global using Paperless.Invoices;
+global using Paperless.Kfula;
+global using Paperless.Reportss;
+global using Paperless.Suppliers;
+global using Paperless.Support;
+global using Paperless.Tagss;
+global using Paperless.Users;
+global using Paperless.Utilities;
+global using Shared;

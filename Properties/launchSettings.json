@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SupportFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "host start --build --port 7089 --cors * --pause-on-error"
+    }
+  }
+}
